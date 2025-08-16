@@ -1,0 +1,156 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Google Form AI Assistant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        textarea {
+            width: 100%;
+            resize: none;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        #questions {
+            height: 40vh;
+        }
+        #answers {
+            height: 40vh;
+            background-color: #f7f7f7;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background: #1a73e8;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background: #1557b0;
+        }
+        h2 {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <button id="getTextBtn">Get Answers</button>
+
+    <h2>Extracted Questions:</h2>
+    <textarea id="questions" readonly></textarea>
+
+    <h2>Answers:</h2>
+    <textarea id="answers" readonly></textarea>
+
+    <script src="sidepanel.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Form AI Assistant</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 15px;
+            background-color: #f4f6f9;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            padding: 15px;
+        }
+
+        textarea {
+            width: 90%;
+            resize: none;
+            padding: 12px;
+            font-size: 14px;
+            border: 1px solid #dcdcdc;
+            border-radius: 8px;
+            background-color: #fafafa;
+            transition: border 0.2s ease;
+        }
+
+        textarea:focus {
+            border: 1px solid #1a73e8;
+            outline: none;
+            background-color: #fff;
+        }
+
+        #questions {
+            height: 27vh;
+        }
+
+        #answers {
+            height: 27vh;
+            background-color: #f7faff;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            background: linear-gradient(135deg, #1a73e8, #0059c1);
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+            transition: background 0.3s ease, transform 0.1s ease;
+        }
+
+        button:hover {
+            background: linear-gradient(135deg, #1557b0, #004397);
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        h2 {
+            margin: 5px 0 8px;
+            font-size: 15px;
+            color: #333;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="card"> -->
+        <button id="getTextBtn">Get Answers</button>
+    <!-- </div> -->
+
+    <div class="card">
+        <h2>Extracted Questions</h2>
+        <textarea id="questions" readonly></textarea>
+    </div>
+
+    <div class="card">
+        <h2>Answers</h2>
+        <textarea id="answers" readonly></textarea>
+    </div>
+
+    <script src="sidepanel.js"></script>
+</body>
+</html>
