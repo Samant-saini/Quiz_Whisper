@@ -8,7 +8,6 @@ Built with simplicity in mind, this project automates repetitive quiz tasks and 
 ## ✨ Features
 - 📘 Supports multiple-choice quizzes  
 - ⚡ Quickly fetches and highlights correct answers  
-- 🔍 Uses BFS / DFS / DFID-N based logic for AI-related quizzes  
 - 🧩 Simple and intuitive UI  
 - 🔒 Works fully in the browser (no server required)  
 
